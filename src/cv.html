@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,30 +13,30 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a class="current" href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Abdulselam Abdurehman</h1>
     <main>
+        <h1>Abdulselam Abdurehman</h1>
         <section id="tech-stack">
             <h2>Tech Stack</h2>
-            <table>
+            <table class="skills">
                 <tr>
-                    <td>Languages</td>
+                    <th>Languages</th>
                     <td>Python, Java, JavaScript</td>
                 </tr>
                 <tr>
-                    <td>Frameworks</td>
+                    <th>Frameworks</th>
                     <td>Flask, Django, Express, React and Node</td>
                 </tr>
                 <tr>
-                    <td>Frontend</td>
-                    <td>Html, CSS, Bootstrap</td>
+                    <th>Frontend</th>
+                    <td>Html, CSS, Bootstrap    </td>
                 </tr>
                 <tr>
-                    <td>Database</td>
+                    <th>Database</th>
                     <td>MongoDB, MySQL</td>
                 </tr>
             </table>
@@ -52,7 +53,7 @@
         </section>
         <section id="testimony">
             <h2>Listen to Testimonies</h2>
-            <video controls width="640" height="360">
+            <video class="gallery" controls width="640" height="360">
                 <source src="images/video.mp4" type="video/mp4">
                 <track kind="subtitles" src="images/transcript.vtt" srclang="en" label="English">
                 Unsupported Content
@@ -60,5 +61,8 @@
             <p>Listen to what the guy has to say!!</p>
         </section>
     </main>
+    <footer>
+        Copyright&copy; Abdulselam&rsquo;s personal website
+    </footer>
 </body>
 </html>
