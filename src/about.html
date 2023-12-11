@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul id="navbar">
-                <li><a id="first-nav" href="home.html">Home</a></li>
-                <li><a id="second-nav" class="current" href="about.html">About</a></li>
-                <li><a id="third-nav" href="contact.html">Contact</a></li>
-                <li><a id="fourth-nav" href="project.html">Projects</a></li>
-                <li><a id="fifth-nav" href="cv.html">CV</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="menu">    
+                <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link menu--current" href="about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="project.html">Projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="education">
-            <h2>Education</h2>
+    <main class="main main-about">
+        <section class="education">
+            <h2 class="education__title">Education</h2>
             <dl>
-            <dt>B.Sc. in Software Engineering</dt>
+            <dt class="education__level">B.Sc. in Software Engineering</dt>
             <dd>
                 <table>
                     <tr>
@@ -30,38 +30,38 @@
                         <td>2022 - Present</td>
                     </tr>
                 </table>
-                </dd>
-                <dt>Senior Secondary Education</dt>
-                <dd>
-                    <table>
-                        <tr>
-                            <td>Addis Ketema Preparatory School</td>
-                            <td>2019 - 2021</td>
-                        </tr>
-                    </table>
-                </dd>
-                <dt>High School</dt>
-                <dd>
-                    <table>
-                        <tr>
-                            <td>Kolfe Secondary School</td>
-                            <td>2017 - 2019</td>
-                        </tr>
-                    </table>
-                </dd>
+            </dd>
+            <dt class="education__level">Senior Secondary Education</dt>
+            <dd>
+                <table>
+                    <tr>
+                        <td>Addis Ketema Preparatory School</td>
+                        <td>2019 - 2021</td>
+                    </tr>
+                </table>
+            </dd>
+            <dt class="education__level">High School</dt>
+            <dd>
+                <table>
+                    <tr>
+                        <td>Kolfe Secondary School</td>
+                        <td>2017 - 2019</td>
+                    </tr>
+                </table>
+            </dd>
             </dl>
         </section>
-        <section id="personal-life">
-            <h2>My routine activities include</h2>
-                 <ul>
+        <section class="activities">
+            <h2 class="activities__title">My routine activities include</h2>
+                 <ul class="activities__list">
                     <li>Reading books</li>
                     <li>Watching Documentaries</li>
                     <li>Walking</li>
                  </ul>
         </section>
-        <section id="interests">
-            <h2>Interests</h2>
-            <ol>
+        <section class="interests">
+            <h2 class="interests__title">Interests</h2>
+            <ol class="interests__list">
                 <li>Coding</li>
                 <li>Learning Mathematics</li>
                 <li>Walking</li>
@@ -69,17 +69,17 @@
                 <li>Calisthenics</li>
             </ol>
         </section>
-        <section id="aspirations">
-            <h2>Aspirations</h2>
-            <ol>
+        <section class="aspirations">
+            <h2 class="aspirations__title">Aspirations</h2>
+            <ol class="aspirations__list">
                 <li>Excel in my career as a software Engineer</li>
                 <li>improve myself in my <span class="qualities">spiritual</span> and <span class="qualities">academic</span> endeavors</li>
-                <li>Do a deep research on the so-called <a href="https://en.wikipedia.org/wiki/NP-hardness">NP, NP-Hard and NP-Complete</a> problems in Algorithms.</li>
+                <li>Do a deep research on the so-called <a href="https://en.wikipedia.org/wiki/NP-hardness">NP, NP-Hard and NP-Complete</a> problems in Algor class="aspirations__list__item"ithms.</li>
             </ol>
         </section>
-        <section id="favourite">
-            <h2>My Favourite Books</h2>
-            <ol>
+        <section class="favourite">
+            <h2 class="favourite__title">My Favourite Books</h2>
+            <ol class="favourite__list">
                 <li><cite>Introduction to Algorithms, CLRS</cite></li>
                 <li><cite>Starting Out with Python, Tony Gaddis</cite></li>
                 <li><cite>Calculus Early Transcendentals, James Stewart</cite></li>
@@ -87,38 +87,38 @@
            </ol>
         </section>
 
-        <section id="achievements">
-            <h1>Achievements</h1>
-            <ul>
+        <section class="achievements">
+            <h1 class="achievements__title">Achievements</h1>
+            <ul class="achievements__list">
                 <li>
-                    <figure>
-                        <img class="gallery" src="images/addis-ababa.jpg" alt="certificate">
-                        <p>Top Scorer among the city&rsquo;s govenment schools in UEE 2021 from govenment schools across Addis Ababa</p>
+                    <figure class="certificate">
+                        <img class="certificate__img" src="images/addis-ababa.jpg" alt="certificate">
+                        <p class="certificate__description">Top scorer in UEE 2021 from govenment schools across Addis Ababa</p>
                     </figure>
                 </li>
                 <li>
-                    <figure>
-                        <img class="gallery" src="images/addis-ketema.jpg" alt="certificate">
-                        <p>From Addis Ketema Sub-city Education Bureau</p>
+                    <figure class="certificate">
+                        <img class="certificate__img" src="images/addis-ketema.jpg" alt="certificate">
+                        <p class="certificate__description">From Addis Ketema Sub-city Education Bureau</p>
                     </figure>
                 </li>
-                <li>
-                    <figure>
-                        <img  class="gallery" src="images/iks.jpg" alt="certificate">
-                        <p>I am two-time gold medal winner of the IKS outstanding student award</p>
+                <li class="achievement_description">
+                    <figure class="certificate">
+                        <img  class="certificate__img" src="images/iks.jpg" alt="certificate">
+                        <p class="certificate__description">I am two-time gold medal winner of the IKS outstanding student award</p>
                     </figure>
                 </li>
             </ul>
         </section>
-    <figure id="advice">
-        <p>Listen to my Favourite Advice</p>
+    <figure class="advice">
+        <p class="advice__header">Listen to my Favourite Advice</p>
         <audio controls>
             <source src="images/listen.mp3" type="audio/mp3">
         </audio>
         <p>Dr. Someone</p>
     </figure>
     </main>
-    <footer>    
+    <footer class="footer">    
         <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
 </body>

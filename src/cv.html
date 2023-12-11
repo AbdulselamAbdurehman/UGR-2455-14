@@ -7,43 +7,43 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a class="current" href="cv.html">CV</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="menu">    
+                <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="project.html">Projects</a></li>
+                <li class="menu__item"><a class="menu__link menu--current" href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Abdulselam Abdurehman</h1>
-        <section id="tech-stack">
-            <h2>Tech Stack</h2>
-            <table class="skills">
+    <main class="main main-cv">
+        <h1 class="main__title">Abdulselam Abdurehman</h1>
+        <section class="tech-stack">
+            <h2 class="tech-stack__title">Tech Stack</h2>
+            <table class="tech-stack__description">
                 <tr>
-                    <th>Languages</th>
+                    <th class="stack">Languages</th>
                     <td>Python, Java, JavaScript</td>
                 </tr>
                 <tr>
-                    <th>Frameworks</th>
+                    <th class="stack">Frameworks</th>
                     <td>Flask, Django, Express, React and Node</td>
                 </tr>
                 <tr>
-                    <th>Frontend</th>
+                    <th class="stack">Frontend</th>
                     <td>Html, CSS, Bootstrap    </td>
                 </tr>
                 <tr>
-                    <th>Database</th>
+                    <th class="stack">Database</th>
                     <td>MongoDB, MySQL</td>
                 </tr>
             </table>
         </section>
-        <section id="soft-skills">
-            <h2>My soft skills include</h2>
-            <ul>
+        <section class="soft-skills">
+            <h2 class="soft-skills__title">My soft skills include</h2>
+            <ul class="soft-skills__list">
                 <li>Problem Solving</li>
                 <li>Communication</li>
                 <li>Critical Thinking</li>
@@ -51,17 +51,17 @@
                 <li>Adaptability and Learning</li>
             </ul>
         </section>
-        <section id="testimony">
-            <h2>Listen to Testimonies</h2>
-            <video class="gallery" controls width="640" height="360">
+        <section class="testimony">
+            <h2 class="testimony__title">Listen to Testimonies</h2>
+            <video class="testimony__video" controls width="640" height="360">
                 <source src="images/video.mp4" type="video/mp4">
                 <track kind="subtitles" src="images/transcript.vtt" srclang="en" label="English">
                 Unsupported Content
             </video>
-            <p>Listen to what the guy has to say!!</p>
+            <p class="testimony__description">Listen to what the guy has to say!!</p>
         </section>
     </main>
-    <footer>    
+    <footer class="footer">    
         <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
 </body>

@@ -1,127 +1,164 @@
-body, footer, header, aside {
+body {
+    background-color: mediumspringgreen;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: mediumspringgreen;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 a {
     text-decoration: none;
 }
-section {
-    padding: 1em;
-    width: 100%;
-}
 
-main {
-    margin: 4em 0 4em;
-}
-aside {
-    padding: 0 1em;
-}
-header {
+.header {
     background-color: black;
     position: fixed;
     width: 100vw;
+    margin: 0;
     top: 0;
+    padding: 0;
 }
-footer {
-    padding: 0.5em;    
-    color: white;
-    background-color: black;
-    text-align: center;
+
+.menu {
     width: 100%;
-}
-nav ul {
     margin: 0;
     list-style-type: none;
     display: flex;
     padding: 0;
     justify-content: center;
 }
-nav ul li a {
-    background-color: white;
+
+
+.menu__link {
     display: block;
     border: 1px solid;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     margin: 0.5em;
-    text-decoration: none;
- } 
-
-.skills {
-    text-align: left;
+    background-color: white;
+}
+.sidebar {
+    margin: 2em;
+}
+    
+.footer {
+    padding: 0.5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
 }
 
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: xx-large;
-    margin: 0 auto;
-
+.main {
+    margin: 3em;
 }
-th {
-    font-size: large;
-    padding-right: 1em;
-}
-
-#profile, #advice {
+.main-home, .main-project, .main-contact {
     text-align: center;
 }
-#profile-img {
+.user__img {
+    width: 30%;
+    height: auto;
     border-radius: 100%;
 }
-dt {
+
+.education__level, .advice__header {
     font-size: large;
-    font-weight: bold;
 }
 
-#personal-life, #aspirations, #achievements, #soft-skills {
-    background-color: white;
-    color: black;
+.achievements__list {
+    list-style-type: none;
+    padding-left:0;
 }
-#addis-ababa, #addis-ketema, #iks {
-    width: 80%;
-    height: 90%;
-}
-.contacts img {
-    width: 34%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1em;
-}
-#connect {
-    margin-left: 1em;
-}
-.contacts {
+.achievements, .advice {
     text-align: center;
 }
-.gallery {
+
+.certificate__img {
     width: 80%;
     height: auto;
-    margin: 0 auto;
-}
-.current {
-    background-color: darkviolet;
-    color: white;
 }
 
-#achievements ul {
-    list-style-type: none;
-    margin-top: 2em;
+.contact__img {
+    width: 40%;
+    height: auto;
+    border-radius: 100%;
 }
-#mail-me {
-    background-color: black;
-    display: block;
-    width: fit-content;
-    color: white;
-    border: 1px solid;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
-    margin: 0 auto;
-    text-decoration: none;
+.project, .certificate {
+    margin: auto 0;
 }
-#profile h1 {
-    margin-top: 1em;
+
+.project__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.2em;
+}
+.main-project{
+    margin-top: 4em;
+}
+.testimony__video {
+    width: 80%;
+    height: auto;
+    /* margin: auto; */
+}
+.testimony {
+    text-align: center;
+}
+.tech-stack {
+    text-align: left;
+}
+.stack {
+    padding-right: 0.5em;
+}
+.menu--current {
+    background-color: violet    ;
+}
+
+
+
+@media (max-width: 1000px) {
+    .user__img {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .user__img {
+        width: 60%;
+    }
+    .testimony__video {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .user__img {
+        width: 80%;
+    }
+}
+@media (max-width: 300px) {
+    .user__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .project__img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .project__img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 700px) {
+    .contact__img {
+        width: 20%;
+    }
+    .certificate__img {
+        width: 100%;
+    }
 }
