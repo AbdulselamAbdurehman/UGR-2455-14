@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="mx-6 my-4">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
+        <nav class="is-primary is-flex is-justify-content-center" role="navigation" aria-label="main navigation">
+            <ul class="columns mb-4" id="navMenu">
+                <li><a class="column is-full-mobile mx-2 is-dark" href="home.html">Home</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="about.html">About</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="contact.html">Contact</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark is-active" href="project.html">Project</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="cv.html">Cv</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="content has-text-centered">
         <figure>
             <a href="https://github.com/AbdulselamAbdurehman/Client-Server"><img src="images/project1.png" alt="client-server"></a>
             <h1>Client-Server Architecture Demonstration</h1>
@@ -29,7 +30,7 @@
             <p>I really like competitive programming, except one thing &mdash; debugging my codes. I come up with this <em>Automated Tester</em> which can help in figuring out what the problems do exist in the code with little effort. </p>
         </figure>
     </main>
-    <footer>
+    <footer class="mt-auto mb-0 pb-0 has-text-centered">
         <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
 </body>

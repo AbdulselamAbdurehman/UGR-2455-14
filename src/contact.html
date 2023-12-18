@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="mx-6 my-4">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
+        <nav class="is-primary is-flex is-justify-content-center" role="navigation" aria-label="main navigation">
+            <ul class="columns mb-4" id="navMenu">
+                <li><a class="column is-full-mobile mx-2 is-dark" href="home.html">Home</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="about.html">About</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark is-active" href="contact.html">Contact</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="project.html">Project</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="cv.html">Cv</a></li>
             </ul>
         </nav>
     </header>
     <h1>Let&rsquo;s connect</h1>
-    <main>  
-        <figure class="contacts">
-            <img src="images/facebook.png" alt="facebook icon">
-            <h2><a href="https://www.facebook.com/profile.php?id=100073054279166">On Facebook</a></h2>
-        </figure>
-        <figure class="contacts">
-            <img src="images/linkedin.png  " alt="linkedin icon">
-            <h2><a href="https://www.linkedin.com/in/abdulselam-abdurehman-a98881254/">On Linkedin</a></h2>
-        </figure>
-        <figure>
-            <img src="images/github.png" alt="github icon">
-            <h2><a href="https://github.com/AbdulselamAbdurehman">On Github</a></h2>
-        </figure>
+    <main class="content has-text-centered">  
+        <div class="card-image has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded mx-auto" src="images/facebook.png" alt="facebook icon">
+            </figure>
+        </div>
+        <h2><a href="https://www.facebook.com/profile.php?id=100073054279166">On Facebook</a></h2>
+        <div class="card-image has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded mx-auto" src="images/linkedin.png" alt="linkedin icon">
+            </figure>
+        </div>
+        <h2><a href="https://www.linkedin.com/in/abdulselam-abdurehman-a98881254/">On Linkedin</a></h2>
+        <div class="card-image has-text-centered">
+            <figure  class="image is-128x128 is-inline-block">
+                <img class="is-rounded mx-auto" src="images/github.png" alt="github icon">
+            </figure>
+        </div>
+        <h2><a href="https://github.com/AbdulselamAbdurehman">On Github</a></h2>
         <input type="submit" value="Email me">
         </main>
-    <footer>
-        Copyright&copy; Abdulselam&rsquo;s personal website
-    </footer>
-</body>
+        <footer class="mt-auto mb-0 pb-0 has-text-centered">
+            <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
+        </footer>
+    </body>
 </html>

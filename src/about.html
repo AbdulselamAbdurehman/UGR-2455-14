@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="mx-6 my-4">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
+        <nav class="is-primary is-flex is-justify-content-center" role="navigation" aria-label="main navigation">
+            <ul class="columns mb-4" id="navMenu">
+                <li><a class="column is-full-mobile mx-2 is-dark" href="home.html">Home</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark is-active" href="about.html">About</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="contact.html">Contact</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="project.html">Project</a></li>
+                <li><a class="column is-full-mobile mx-2 is-dark" href="cv.html">Cv</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="education">
+    <main class="content section">
+        <section>
             <h2>Education</h2>
             <dl>
-            <dt>B.Sc. in Software Engineering</dt>
+            <dt class="subtitle is-4 mb-0">B.Sc. in Software Engineering</dt>
             <dd>
                 <table>
                     <tr>
@@ -30,7 +31,7 @@
                     </tr>
                 </table>
                 </dd>
-                <dt>Senior Secondary Education</dt>
+                <dt class="subtitle is-4 mb-0">Senior Secondary Education</dt>
                 <dd>
                     <table>
                         <tr>
@@ -39,7 +40,7 @@
                         </tr>
                     </table>
                 </dd>
-                <dt>High School</dt>
+                <dt class="subtitle is-4 mb-0">High School</dt>
                 <dd>
                     <table>
                         <tr>
@@ -50,7 +51,7 @@
                 </dd>
             </dl>
         </section>
-        <section id="personal-life">
+        <section>
             <h2>My routine activities include</h2>
                  <ul>
                     <li>Reading books</li>
@@ -58,7 +59,7 @@
                     <li>Walking</li>
                  </ul>
         </section>
-        <section id="interests">
+        <section>
             <h2>Interests</h2>
             <ol>
                 <li>Coding</li>
@@ -68,7 +69,7 @@
                 <li>Calisthenics</li>
             </ol>
         </section>
-        <section id="aspirations">
+        <section>
             <h2>Aspirations</h2>
             <ol>
                 <li>Excel in my career as a software Engineer</li>
@@ -76,7 +77,7 @@
                 <li>Do a deep research on the so-called <a href="https://en.wikipedia.org/wiki/NP-hardness">NP, NP-Hard and NP-Complete</a> problems in Algorithms.</li>
             </ol>
         </section>
-        <section id="favourite">
+        <section>
             <h2>My Favourite Books</h2>
             <ol>
                 <li><cite>Introduction to Algorithms, CLRS</cite></li>
@@ -86,7 +87,7 @@
            </ol>
         </section>
 
-        <section id="achievements">
+        <section>
             <h1>Achievements</h1>
             <ul>
                 <li>
@@ -108,17 +109,16 @@
                 </li>
             </ul>
         </section>
-    <figure id="advice">
+    <figure>
         <p>Listen to my Favourite Advice</p>
         <audio controls>
             <source src="images/listen.mp3" type="audio/mp3">
         </audio>
-
         <p>Dr. Someone</p>
     </figure>
     </main>
-    <footer>
-        Copyright&copy; Abdulselam&rsquo;s personal website
+    <footer class="mt-auto mb-0 pb-0 has-text-centered">
+        <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
 </body>
 </html>
