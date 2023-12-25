@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
-            </ul>
+    <header class="mb-2 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary text-center px-4">
+            <div class="container-fluid">
+                <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="m-4 text-center">
         <figure>
-            <a href="https://github.com/AbdulselamAbdurehman/Client-Server"><img src="images/project1.png" alt="client-server"></a>
+            <a href="https://github.com/AbdulselamAbdurehman/Client-Server"><img class="img-fluid w-75" src="images/project1.png" alt="client-server"></a>
             <h1>Client-Server Architecture Demonstration</h1>
             <p>A simple messaging application using client-server architecture models in python for Communication within range of 35 feets.</p>
         </figure>
         <figure>
-            <a href="https://github.com/AbdulselamAbdurehman/Automated-Testing"><img src="images/project2.png" alt="robots"></a>
+            <a href="https://github.com/AbdulselamAbdurehman/Automated-Testing"><img class="img-fluid w-75" src="images/project2.png" alt="robots"></a>
             <h1>Automated Testing</h1>
             <p>I really like competitive programming, except one thing &mdash; debugging my codes. I come up with this <em>Automated Tester</em> which can help in figuring out what the problems do exist in the code with little effort. </p>
         </figure>
     </main>
-    <footer>
+    <footer class="text-center p-2 bg-dark text-white">
         <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
-            </ul>
+    <header class="mb-2 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary text-center px-4">
+            <div class="container-fluid">
+                <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item list-group-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <h1>Let&rsquo;s connect</h1>
-    <main>  
-        <figure class="contacts">
-            <img src="images/facebook.png" alt="facebook icon">
-            <h2><a href="https://www.facebook.com/profile.php?id=100073054279166">On Facebook</a></h2>
+    <main class="m-4 text-center">  
+        <h1 class="ms-4">Let&rsquo;s connect</h1>
+        <figure class="contacts mb-4">
+            <img class="img-fluid w-25" src="images/facebook.png" alt="facebook icon">
+            <h2><a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100073054279166">On Facebook</a></h2>
         </figure>
         <figure class="contacts">
-            <img src="images/linkedin.png  " alt="linkedin icon">
-            <h2><a href="https://www.linkedin.com/in/abdulselam-abdurehman-a98881254/">On Linkedin</a></h2>
+            <img class="img-fluid w-25" src="images/linkedin.png  " alt="linkedin icon">
+            <h2><a class="text-decoration-none" href="https://www.linkedin.com/in/abdulselam-abdurehman-a98881254/">On Linkedin</a></h2>
         </figure>
         <figure>
-            <img src="images/github.png" alt="github icon">
-            <h2><a href="https://github.com/AbdulselamAbdurehman">On Github</a></h2>
+            <img class="img-fluid w-25" src="images/github.png" alt="github icon">
+            <h2><a class="text-decoration-none" href="https://github.com/AbdulselamAbdurehman">On Github</a></h2>
         </figure>
-        <input type="submit" value="Email me">
-        </main>
-    <footer>
-        Copyright&copy; Abdulselam&rsquo;s personal website
+        <input class="btn btn-lg btn-dark" type="submit" value="Email me">
+    </main>
+    <footer class="text-center p-2 bg-dark text-white">
+            <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

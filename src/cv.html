@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
-            </ul>
+    <header class="mb-2 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary text-center px-4">
+            <div class="container-fluid">
+                <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <h1>Abdulselam Abdurehman</h1>
-    <main>
+    <main class="m-4">
+        <h1 class="fs-2">Abdulselam Abdurehman</h1>
         <section id="tech-stack">
-            <h2>Tech Stack</h2>
-            <table>
-                <tr>
-                    <td>Languages</td>
+            <h2 class="fs-4 ms-2">Tech Stack</h2>
+            <table class="ms-5">
+                <tr class="">
+                    <td class="fs-5 me-4">Languages</td>
                     <td>Python, Java, JavaScript</td>
                 </tr>
                 <tr>
-                    <td>Frameworks</td>
+                    <td class="fs-5 ">Frameworks</td>
                     <td>Flask, Django, Express, React and Node</td>
                 </tr>
                 <tr>
-                    <td>Frontend</td>
+                    <td class="fs-5 me-4">Frontend</td>
                     <td>Html, CSS, Bootstrap</td>
                 </tr>
                 <tr>
-                    <td>Database</td>
+                    <td class="fs-5 me-4">Database</td>
                     <td>MongoDB, MySQL</td>
                 </tr>
             </table>
         </section>
         <section id="soft-skills">
-            <h2>My soft skills include</h2>
-            <ul>
+            <h2 class="fs-4 ms-2">My soft skills include</h2>
+            <ul class="ms-4">
                 <li>Problem Solving</li>
                 <li>Communication</li>
                 <li>Critical Thinking</li>
@@ -51,14 +59,22 @@
             </ul>
         </section>
         <section id="testimony">
-            <h2>Listen to Testimonies</h2>
-            <video controls width="640" height="360">
-                <source src="images/video.mp4" type="video/mp4">
-                <track kind="subtitles" src="images/transcript.vtt" srclang="en" label="English">
-                Unsupported Content
-            </video>
-            <p>Listen to what the guy has to say!!</p>
+            <h2 class="fs-4 text-center">Listen to Testimonies</h2>
+            <div class="container-fluid mt-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls>
+                    <source src="images/video.mp4" type="video/mp4">
+                    <track kind="subtitles" src="images/transcript.vtt" srclang="en" label="English">
+                    Unsupported Content
+                    </video>
+                </div>
+            </div>
+            <p class="text-center">Listen to what the guy has to say!!</p>
         </section>
     </main>
+    <footer class="text-center p-2 bg-dark text-white">
+        <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="cv.html">Cv</a></li>
-            </ul>
+    <header class="mb-2 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary text-center px-4">
+            <div class="container-fluid">
+                <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <aside><p>Thank You for visiting my site</p></aside>
-        <section>
-            <img src="images/profile_img.jpg" alt="profile_img">
-            <h1>I am Abdulselam</h1>
-            <h2>I am software engineering student at AAiT</h2>
-
+    <main class="text-center mb-4">
+        <aside><p class="fw-light">Thank You for visiting my site</p></aside>
+        <section class="text-center">
+            <img class="img-fluid rounded" src="images/profile_img.jpg" alt="profile_img">
+            <h1 class="fs-2 mt-4">I am Abdulselam</h1>
+            <h2 class="fs-4 font-weight-normal">I am software engineering student at AAiT</h2>
         </section>
     </main>
-    <footer>
+    <footer class="text-center p-2 bg-dark text-white">
         <p>Copyright&copy; 2023 Abdulselam Abdurehman</p>
     </footer>
+    <script src="bootstrap.bundle.min.js"></script>         
 </body>
 </html>
